@@ -1,0 +1,442 @@
+body {
+    background-color: lightblue;
+}
+
+#enter-age {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center; 
+    font-weight: bold;
+    font-size: 20px;
+    width: 100%;
+}
+
+#pet-age-input, #calculate-age-button, #human-age-output, #time-button, #time-output {
+    display: block; 
+    margin: auto;
+    text-align: center; 
+}
+
+#human-age-output {
+    font-size: 16px;
+}
+
+#pet-option {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+#time-output {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav{
+    background-image: url(../images/cloud.jpeg);
+    border:2px solid black;
+    margin: auto;
+    text-align: center;
+    line-height: 40px;
+    height: auto;
+}
+
+nav a{
+    background-color: lightslategray;
+    padding: 5px;
+    margin: auto;
+    font-size: 20px;
+    color: black;
+}
+nav a.active {
+    color: aliceblue;
+    border: solid blue;
+    font-weight: bold;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+nav a:hover {
+    background-color: rgb(8, 212, 239);
+}
+
+#jump {
+    position: absolute; 
+    top: -500px;
+}
+
+#jump:focus {
+    top: auto;
+    font-size: 20px;
+    position: relative;
+    text-align: center;
+ }
+ 
+a{
+    text-align: underline;
+}
+
+#skip{
+    text-transform: uppercase;
+}
+
+#skip {
+    position: absolute;
+    left: -200px;
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    color:rgb(5, 5, 166);
+    text-align: center;
+    
+}
+
+h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+    color:darkblue;
+    
+}
+
+img, video {
+    display: grid;
+    border:5px solid lavender;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 500%;
+    border-radius: 20px;
+    padding: 5px;
+}  
+
+/* PETS */
+.pet_description {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px; 
+}
+
+.pet_thubnail {
+    width: 300px; 
+    border-radius: 5px; 
+    border: 5px solid blue; 
+    padding: 0;
+    margin: auto;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.pet_paragraph {
+    border: 2px solid grey;
+    border-radius: 5px; 
+    padding: 10px;
+    background-color: lightcyan;
+}
+
+.pet_gallery {
+    display: flex;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 5px;
+    width: 75%;
+}
+
+.pet_gallery * {
+    width: 100%;
+    height: auto; 
+    object-fit: cover;
+    
+}
+
+.pet_likings {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: darkslategray;
+    border: 2px dashed gray;
+    text-align: center;
+    width: auto;
+    height: auto;
+    margin-bottom: 20px;
+    
+}
+/* RECIPE */
+
+.recipe_info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 2px solid grey;
+    background-color: lightgray;
+    margin: auto;
+    font-size: 15px;
+}
+
+@keyframes slideInCenterOut {
+    0% {
+      transform: translateX(-100%);
+    }
+    50% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  
+  .recipe_img {
+    text-align: center;
+    margin: auto;
+    animation: slideInCenterOut 5s ease-in-out infinite;
+    animation-fill-mode: forwards;
+  }
+  
+
+@media (prefers-reduced-motion) {
+    .recipe_img {
+        animation: none;
+    }
+
+    .gif {
+        display: none;
+    }
+}
+
+.recipe_desc {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold; 
+    background-color: lightcyan;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.6);
+    display: inline-block;
+}
+
+.recipe_ing {
+    text-align: center;
+    margin: 0; 
+    padding: 0;
+    line-height: 1;
+}
+
+.recipe_steps ol {
+    list-style-type: decimal;
+    list-style-position: inside;
+    margin-bottom: 5px;
+}
+
+.recipe_steps li {
+    padding-left: 1em; 
+    position: relative;
+    font-size: 18px;
+}
+
+.recipe_add img {
+    max-inline-size: 100%;
+    max-block-size: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* TRAVEL */
+.travel_img_gif {
+    width: 70%; 
+    margin: auto;
+}
+.travel_img_gif img {    
+    max-width: 100%;   
+}
+
+.travel_loc {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.travel_desc {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px; 
+    font-size: 16px;
+}
+.travel_desc p {
+    border: 2px solid grey;
+    border-radius: 5px; 
+    padding: 10px;
+    background-color: lightcyan;
+    overflow: auto;
+    height: 100px;
+}
+
+.travel_gallery {
+    display: grid;
+    justify-content: center;
+}
+
+.travel_gallery figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50px;
+    max-width: 100%;  
+    margin: auto; 
+}
+
+.travel_gallery figcaption {
+    text-align: center;
+    font-style: italic;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: auto; 
+    border: 1px solid black;
+    margin-bottom: 5px;
+}
+
+
+/* tablet size */
+@media screen and (min-width: 600px){
+    
+    nav {
+        height: auto;
+    }
+    nav ul {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+    nav li {
+        margin: 0 10px;
+    }
+    nav a {
+        font-size: 24px;
+    }
+    #jump {
+        position: relative;
+        text-align: left;
+    }
+    img:hover {
+        transform: scale(1.10); 
+        transition: transform 0.3s ease; 
+        z-index: 10; 
+    }
+    .pet_description p:hover {
+        box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+        transition: box-shadow 0.3s ease-in-out;
+    }
+    
+    .pet_gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr; 
+        gap: 10px; 
+    }
+    @keyframes slideInCenterOut {
+        0% {
+          transform: translateX(-50%);
+        }
+        50% {
+          transform: translateX(50);
+        }
+        100% {
+          transform: translateX(100%);
+        }
+        
+    }
+    .recipe_info:hover {
+        box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        transition: box-shadow 0.3s ease-in-out;
+    }
+    
+    .recipe_img {
+        text-align: center;
+        margin: auto;
+        animation: slideInCenterOut 5s ease-in-out infinite;
+    }
+
+    .recipe_desc, .travel_desc p {
+        padding: 15px;
+        height: auto; 
+    }
+    .recipe_ing li:hover {
+        box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        transition: box-shadow 0.3s ease-in-out;
+    }
+    .recipe_steps li:hover {
+        box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        transition: box-shadow 0.3s ease-in-out;
+    }
+
+    img, video {
+        max-width: 150%;
+        height: auto; 
+    }
+    .travel_desc p:hover {
+        box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        transition: box-shadow 0.3s ease-in-out;
+    }
+    .travel_img_gif {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .travel_gallery img {
+        display: grid;
+        grid-gap: 10px;
+        width: 400px;
+    }
+    
+    .travel_gallery figure {
+        width: auto;
+        margin: 10px;
+    }
+    .travel_gallery figcaption:hover {
+        box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        transition: box-shadow 0.3s ease-in-out;
+    }
+
+}
+
+/* desktop size */
+@media screen and (min-width: 1100px) {
+    .thumbnail {
+        width: 90%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+        justify-content: space-around;
+    }
+
+    img:hover {
+        transform: scale(1.10); 
+        transition: transform 0.3s ease; 
+        z-index: 10; 
+    }
+
+    .travel_gallery {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+    }
+
+    .travel_gallery figure:nth-child(5) {
+        grid-column: 1 / span 2;
+        justify-self: center; 
+    }
+
+
+}
