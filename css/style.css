@@ -67,17 +67,14 @@ nav a:hover {
 }
 
 #jump:focus {
-    top: auto;
-    font-size: 20px;
-    position: relative;
-    text-align: center;
- }
+    position: static;
+}
  
-a{
+a {
     text-align: underline;
 }
 
-#skip{
+#skip {
     text-transform: uppercase;
 }
 
