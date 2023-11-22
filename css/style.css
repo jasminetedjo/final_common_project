@@ -424,16 +424,24 @@ img, video {
         z-index: 10; 
     }
 
+    .travel_img_gif {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center; 
+        align-items: center; 
+        gap: 10px; 
+        width: 100%; 
+    }
+    
+    .travel_img_gif > img { 
+        width: auto; 
+        height: auto;
+        margin: auto;
+    }
+
     .travel_gallery {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-gap: 10px;
+        
     }
-
-    .travel_gallery figure:nth-child(5) {
-        grid-column: 1 / span 2;
-        justify-self: center; 
-    }
-
-
 }
