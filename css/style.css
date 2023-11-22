@@ -426,16 +426,16 @@ img, video {
 
     .travel_img_gif {
         display: grid;
-        grid-template-columns: repeat(2, 1fr); /* Creates two columns with equal width */
-        justify-content: center; /* Centers the grid container if it's smaller than its parent */
-        align-items: center; /* Vertically centers the grid items */
-        gap: 10px; /* Space between grid items */
-        width: 100%; /* Use the full width of the parent container */
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
     }
     .travel_img_gif img{
         align-items: center;
-        height: auto; /* Maintain aspect ratio */
-    margin: auto; /* Center within the grid cell */
+        height: auto;
+        margin: auto;
     }
 
     .travel_gallery {
