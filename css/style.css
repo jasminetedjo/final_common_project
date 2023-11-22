@@ -301,6 +301,15 @@ img, video {
     margin-bottom: 5px;
 }
 
+@media (prefers-reduced-motion) {
+    .travel_img_gif {
+        display: block;
+    }
+    .travel_img_gif .gif {
+        display: none;
+    }
+}
+
 
 /* tablet size */
 @media screen and (min-width: 600px){
